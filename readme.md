@@ -19,7 +19,7 @@ Start the ElasticSearch docker:
 	
 Start this docker:
 
-	docker run -d -e ESLOG_HOST={hostip} -e ESLOG_ES_PORT=9200 -p 5514:514 jverhoeven/rsyslog-elasticsearch
+	docker run -d -e ESLOG_HOST={hostip} -e ESLOG_ES_PORT=9200 -p 5514:514 visity/rsyslog-elasticsearch
 	
 where {hostip} should be the ip address of the elasticsearch docker host. I used port 5514 so it will not conflict with any locally running syslog instance.
 
