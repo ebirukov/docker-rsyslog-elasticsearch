@@ -3,14 +3,14 @@
 # Also supports Maestro-ng formatted environment variables
  
 if [ -z "$ESLOG_HOST" ]; then
-	if [ -n "$ESLOG_ES1_HOST" ]; then
-		ESLOG_HOST=`echo "$ESLOG_ES1_HOST"`
+	if [ -n "$ELASTICSEARCH_ESLOG1_HOST" ]; then
+		ESLOG_HOST=`echo "$ELASTICSEARCH_ESLOG1_HOST"`
 	fi
 fi
 
 if [ -z "$ESLOG_ES_PORT" ]; then
-	if [ -n "$ESLOG_ES1_ES_PORT" ]; then
-		ESLOG_ES_PORT=`echo "$ESLOG_ES1_ES_PORT"`
+	if [ -n "$ELASTICSEARCH_ESLOG1_ES_PORT" ]; then
+		ESLOG_ES_PORT=`echo "$ELASTICSEARCH_ESLOG1_ES_PORT"`
 	fi
 fi
 
